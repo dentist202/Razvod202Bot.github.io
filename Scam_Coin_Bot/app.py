@@ -17,6 +17,5 @@ if __name__ == '__main__':
 
     application.add_handler(CommandHandler('start', launch_web_ui))
 
-
     print(f"Your bot is listening! Navigate to http://t.me/{BOT_USERNAME} to interact with it!")
     application.run_polling()
