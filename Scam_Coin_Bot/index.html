@@ -22,7 +22,7 @@
   mainButton.onClick(function(){
     window.Telegram.WebApp.sendData(JSON.stringify($scope.foods));
 
-  application.add_handler(MessageHandler(filters.StatusUpdate.WEB_APP_DATA, web_app_data))
+
   })
 });
     </script>

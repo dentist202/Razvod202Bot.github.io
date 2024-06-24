@@ -20,6 +20,13 @@ if __name__ == '__main__':
 
     application.add_handler(CommandHandler('start', launch_web_ui))
 
+
+    async def web_app_data(update: Update, context: CallbackContext):
+        data = json.loads(update.message.web_app_data.data)
+        await update.message.reply_text("Your data was:")
+        for result in data:
+            await update.message.reply_text(f"{result['name']}: {result['value']}")
+
     application.add_handler(MessageHandler(filters.StatusUpdate.WEB_APP_DATA, web_app_data))
 
     print(f"Your bot is listening! Navigate to http://t.me/{BOT_USERNAME} to interact with it!")
