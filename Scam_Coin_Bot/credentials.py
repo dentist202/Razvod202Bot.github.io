@@ -5,6 +5,6 @@ if os.path.exists(".env"):
     load_dotenv()
 
 
-BOT_TOKEN = os.getenv('6729837745:AAGpJn--g32h8idH8gQQIchapaoKetky6V4')
-BOT_USERNAME = os.getenv('Razvod202Bot')
-WEBAPP_URL = os.getenv('https://dentist202.github.io/Razvod202Bot.github.io/Scam_Coin_Bot/')
+BOT_TOKEN = os.getenv('BOT_TOKEN')
+BOT_USERNAME = os.getenv('BOT_USERNAME')
+WEBAPP_URL = os.getenv('WEBAPP_URL')
