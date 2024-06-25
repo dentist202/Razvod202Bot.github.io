@@ -18,9 +18,8 @@
   mainButton.text = "Save Preferences";
   mainButton.enable();
   mainButton.show();
-
-    mainButton.onClick(function(){
-      window.Telegram.WebApp.sendData(JSON.stringify($scope.foods));
+  mainButton.onClick(function(){
+     window.Telegram.WebApp.sendData(JSON.stringify($scope.foods));
   })
 });
     </script>
